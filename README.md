@@ -10,6 +10,8 @@ Pasos para ejecutar:
 
 npm run sass
 
+Automáticamente, los cambios en scss se verán reflejados en css después de ejecutar el script anterior.
+
 4. Todos los estilos nuevos se deben agregar dentro del archivo design.scss en la ruta:
 
 /resources/sass/design.scss
