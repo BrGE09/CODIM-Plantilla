@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* @import url("../fonts/<archivo>.css");  ---> Importación de fuentes, seguir estructura e indicaciones en ## instrucciones.txt ##*/
+.centro {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  right: 0%;
+  transform: translate(0%, -50%);
+}
+
+.bg {
+  align-items: center;
+  justify-content: center;
+  background-size: 2000% 2000%;
+  background-image: linear-gradient(-45deg, #3b7ee3 0%, #576fe6 25%, #233dff 51%, #000545 100%) !important;
+  animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
+  overflow-x: hidden !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  color: #f4f6fc !important;
+}
+
+div.presentacion {
+  border-color: #12229d;
+  border-width: 1em;
+  border-style: solid;
+  border-radius: 70px !important;
+  text-align: center;
+}
+div.presentacion h1.nombre {
+  font-size: 100px !important;
+}
+
+div.avatar {
+  margin-top: 15%;
+  border-radius: 70px !important;
+  background-color: #12229d;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+div.avatar .perfil {
+  /* Cambiar el avatar por el propio en el url */
+  background-image: url("../imagenes/Brandon Guerra.png");
+  background-size: cover;
+  width: 260px;
+  height: 260px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-bottom: -25%;
+  transform: translate(-50%, -50%);
+}
+div.avatar .btns {
+  border-radius: 70px !important;
+  background-color: #00fe8c;
+  width: 8em;
+  height: 3em;
+  margin-bottom: 20%;
+  font-size: 30px !important;
+}
+div.avatar .btns:hover {
+  background-color: #cae8ff;
+  box-shadow: 0px 2px 15px #233dff;
+}
+
+/*# sourceMappingURL=design.css.map */

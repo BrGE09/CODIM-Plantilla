@@ -1,0 +1,15 @@
+Para importar fuentes al sitio web, descarga los archivos dentro de esta carpeta e importa el css de la fuente como se muestra
+a continuación:
+
+@import url("resources/fonts/<archivo>.css");
+
+Esto dentro del scss del sitio web en la ruta:
+
+resources/scss/design.scss
+
+Antes de continuar, asegúrate de iniciar sass con el comando:
+
+npm run sass
+
+Es indispensable tener instalado NodeJS en tu ordenador.
+Para utilizar la fuente instalada, solo se ocupa la instruccion font family en css y el nombre que viene en el css de la fuente.
